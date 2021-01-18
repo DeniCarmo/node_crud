@@ -1,0 +1,24 @@
+<table>
+    <tr class="tr">
+        <td class="td">Action</td>
+        <td class="td">ID</td>
+        <td class="td">Name</td>
+        <td class="td">Age</td>
+    </tr>
+
+    {{#data}}
+    <tr class="tr">
+        <td class="td">
+            <a href="update/{{ id }}">
+                <img src="/img/edit-icon.svg" alt="Edit" title="Edit">
+            </a>
+            <a href="delete/{{ id }}" class="crud-delete__button">
+                <img src="/img/delete-icon.svg" alt="Delete" title="Delete">
+            </a>
+        </td>
+        <td class="td"><a href="/select/{{ id }}">{{ id }}</a></td>
+        <td class="td"><a href="/select/{{ id }}">{{ name }}</a></td>
+        <td class="td">{{ age }}</td>
+    </tr>
+    {{/data}}
+</table>

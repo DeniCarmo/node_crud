@@ -1,0 +1,41 @@
+body{
+    background:#fefefe;
+}
+
+table{
+    width: 100%;
+}
+
+table td{
+    width: 25%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+table tr{
+    display: flex;
+    padding-left: 5px;
+}
+
+table tr:nth-child(odd){
+    background: #ccc;
+}
+
+table tr:first-child{
+    background: #333;
+    color: #fefefe;
+    font-weight: 700;
+}
+
+table tr td a{
+    margin-right: 5px;
+}
+
+table tr td a img{
+    width: 100%;
+    max-width: 15px;
+    height: auto;
+    max-height: 15px;
+}
